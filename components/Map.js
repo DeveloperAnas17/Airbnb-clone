@@ -3,6 +3,7 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import getCenter from "geolib/es/getCenter";
 
 function Map({ searchResults }) {
+  const [selectedLocation, setSelectionLocation] = useState({});
   // transform the search results object into the object like this
   // {latitude: 52.516272, logitude: 13.37722}
   const coordinates = searchResults.map((result) => ({
@@ -12,7 +13,6 @@ function Map({ searchResults }) {
 
   //   The latitude and longitude of the center of location coordinates
   const center = getCenter(coordinates);
-  console.log(center);
 
   const [viewport, setViewport] = useState({
     width: "100%",
@@ -37,8 +37,29 @@ function Map({ searchResults }) {
             offsetLeft={-20}
             offsetTop={-10}
           >
-            <p className="cursor-pointer text-2xl">📌</p>
+            <p
+              role="img"
+              onClick={() => setSelectionLocation(result)}
+              className="cursor-pointer text-2xl animate-bounce"
+              aria-label="push-pin"
+            >
+              📌
+            </p>
           </Marker>
+
+          {/* The popup shoul show if click on marker */}
+          {selectedLocation.long === result.log ? (
+            <Popup
+              onClose={() => setSelectionLocation({})}
+              closeOnClick={true}
+              latitude={result.lat}
+              longitude={result.long}
+            >
+              {result.title}
+            </Popup>
+          ) : (
+            false
+          )}
         </div>
       ))}
     </ReactMapGL>
