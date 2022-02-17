@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="grid grid-cols-1 px-10 space-y-8  md:space-y-0 md:grid-cols-4 ">
+    <div className="grid grid-cols-1 px-10 py-10 space-y-8  md:space-y-0 md:grid-cols-4 ">
       <div>
         <h5 className=" text-md font-bold text-gray-800">ABOUT</h5>
         <p className="footer-link">How Airbnb works</p>
