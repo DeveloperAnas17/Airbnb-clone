@@ -1,77 +1,37 @@
 function Footer() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 space-y-10 md:space-y-0 px-32 py-14 bg-gray-100">
+    <div className="grid grid-cols-1 px-10 space-y-8  md:space-y-0 md:grid-cols-4 ">
       <div>
-        <h5 className="space-y-4 text-md font-bold text-gray-800">ABOUT</h5>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          How Airbnb works
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Newsroom
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Investors
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Airbnb Plus
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Airbnb Luxe
-        </p>
+        <h5 className=" text-md font-bold text-gray-800">ABOUT</h5>
+        <p className="footer-link">How Airbnb works</p>
+        <p className="footer-link">Newsroom</p>
+        <p className="footer-link">Investors</p>
+        <p className="footer-link">Airbnb Plus</p>
+        <p className="footer-link">Airbnb Luxe</p>
       </div>
       <div>
-        <h5 className="space-y-4 text-md font-bold text-gray-800">COMMUNITY</h5>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Accessibility
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          This is not a real site
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Its a pretty awesom clone
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Refferal accepted
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Next Clone
-        </p>
+        <h5 className="text-md font-bold text-gray-800">COMMUNITY</h5>
+        <p className="footer-link">Accessibility</p>
+        <p className="footer-link">This is not a real site</p>
+        <p className="footer-link">Its a pretty awesom clone</p>
+        <p className="footer-link">Refferal accepted</p>
+        <p className="footer-link">Next Clone</p>
       </div>
-      <div>
-        <h5 className="space-y-4 text-md font-bold text-gray-800">HOST</h5>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold ">
-          Anas
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Presents
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Learn Tailwind
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Hundreds of Student
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Join Now
-        </p>
+      <div className="">
+        <h5 className=" text-md font-bold text-gray-800">HOST</h5>
+        <p className="footer-link ">Anas</p>
+        <p className="footer-link">Presents</p>
+        <p className="footer-link">Learn Tailwind</p>
+        <p className="footer-link">Hundreds of Student</p>
+        <p className="footer-link">Join Now</p>
       </div>
-      <div>
-        <h5 className="space-y-4 text-md font-bold text-gray-800">SUPPORT</h5>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Help Center
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Trust & Safety
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Say Hi Youtube
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          Easter Eggs
-        </p>
-        <p className="font-semibold text-gray-600 hover:cursor-pointer hover:text-gray-800 hover:font-bold">
-          For the Win
-        </p>
+      <div className="">
+        <h5 className=" text-md font-bold text-gray-800">SUPPORT</h5>
+        <p className="footer-link">Help Center</p>
+        <p className="footer-link">Trust & Safety</p>
+        <p className="footer-link">Say Hi Youtube</p>
+        <p className="footer-link">Easter Eggs</p>
+        <p className="footer-link">For the Win</p>
       </div>
     </div>
   );

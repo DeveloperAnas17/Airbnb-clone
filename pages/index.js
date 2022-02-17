@@ -47,9 +47,8 @@ export default function Home({ exploreData, mediumCardData }) {
           description="Wishlists curated by Airbnb."
           buttonText="Get Inspired"
         />
+        <Footer />
       </main>
-
-      <Footer />
     </div>
   );
 }
